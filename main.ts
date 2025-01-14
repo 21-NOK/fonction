@@ -5,12 +5,9 @@ namespace ws2812b {
     //% shim=sendBufferAsm
     export function sendBuffer(buf: Buffer, pin: DigitalPin) {
     }
-
     //% shim=setBufferMode
     export function setBufferMode(pin: DigitalPin, mode: number) {
-
     }
-
     export const BUFFER_MODE_RGB = 1
     export const BUFFER_MODE_RGBW = 2
     export const BUFFER_MODE_RGB_RGB = 3
@@ -54,8 +51,8 @@ enum NeoPixelMode {
 /**
  * Functions to operate NeoPixel strips.
  */
-//% weight=5 color=#2699BF icon="\uf110"
-namespace neopixel {
+//% weight=5 color=#0000FF icon="\uf110"
+namespace fonction {
     /**
      * A NeoPixel strip
      */
@@ -180,7 +177,7 @@ namespace neopixel {
                 for (let i = 0; i < n; ++i) {
                     if (i <= v) {
                         const b = Math.idiv(i * 255, n1);
-                        this.setPixelColor(i, neopixel.rgb(b, 0, 255 - b));
+                        this.setPixelColor(i, fonction.rgb(b, 0, 255 - b));
                     }
                     else this.setPixelColor(i, 0);
                 }
