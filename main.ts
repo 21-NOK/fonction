@@ -73,7 +73,7 @@ namespace fonction {
          * @param startHue the start hue value for the rainbow, eg: 1
          * @param endHue the end hue value for the rainbow, eg: 360
          */
-        //% blockId="neopixel_set_strip_rainbow" block="%strip|arc-en-ciel de %startHue|a %endHue"
+        //% blockId="neopixel_set_strip_rainbow" block="%strip|rainbow of %startHue|up to %endHue"
         //% strip.defl=strip
         //% weight=85 blockGap=8
         //% parts="neopixel"
